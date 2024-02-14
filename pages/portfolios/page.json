@@ -1,29 +1,34 @@
 {
-	"name": "portfolios",
-	"portfolios": [
-		{
-			"id": "",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"name": "andrey.lizivinskiy"
-		},
-		{
-			"id": "",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"name": "andrey.lizivinskiy"
-		},
-		{
-			"id": "",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"name": "andrey.lizivinskiy"
-		},
-		{
-			"id": "",
-			"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"name": "andrey.lizivinskiy"
-		}
-	]
+  "name": "portfolios",
+  "tags": [
+    {
+      "name": "Realestate",
+      "portfolios": [
+        {
+          "url": "/portfolio",
+          "thumb": "/artemvelihin/img/realestate1.jpg",
+		  "price":"3200$",
+          "name": "Realestate"
+        },
+        {
+          "url": "/portfolio",
+          "thumb": "/artemvelihin/img/realestate2.jpg",
+		  "price":"3200$",
+          "name": "Realestate"
+        },
+        {
+          "url": "/portfolio",
+          "thumb": "/artemvelihin/img/realestate3.jpg",
+		  "price":"3200$",
+          "name": "Realestate"
+        },
+        {
+          "url": "/portfolio",
+          "thumb": "/artemvelihin/img/realestsate4.jpg",
+		  "price":"3200$",
+          "name": "Realestate"
+        }
+      ]
+    }
+  ]
 }

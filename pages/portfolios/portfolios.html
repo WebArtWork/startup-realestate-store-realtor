@@ -1,4 +1,4 @@
-<script type="module">
+<!-- <script type="module">
     import Portfolio from '/api/wjst/portfolio';
     import Dom from '/api/wjst/dom';
     Portfolio.perPage = 1;
@@ -34,30 +34,45 @@
             }));
         }
     });
-</script>
+</script> -->
 
-<section class="portfolios-page">
+
+    <section class="cta">
+        <div class="cta__container">
+            {% if variables.cta_title %}
+            <h2 class="cta__title">{{{variables.cta_title}}}</h2>
+            {% endif %} {% if variables.cta_text %}
+            <p class="cta__text">{{{variables.cta_text}}}</p>
+            {% endif %} <!-- {% if variables.cta_button_text %}
+            <a href="/manage/profile" class="cta__link">
+                {{{variables.cta_button_text}}}
+            </a>
+            {% endif %} -->
+        </div>
+    </section>
     <div class="portfolios-page__container">
-        <h2 class="portfolios-page__title title">Portfolios</h2>
+        {% for tag in tags %}
+        <h2 class="portfolios-page__title title">{{{tag.name}}}</h2>
 
         <div class="portfolios-page__wrapper">
-            {% for portfolio in portfolios %}
+            {% for portfolio in tag.portfolios %}
 
             <a href="/portfolio/{{{portfolio.id}}}" class="portfolios-page__card portfolios-page-card">
                 <div class="portfolios-page-card__img">
                     <img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}" />
                 </div>
-                <span class="portfolios-page-card__title">{{{portfolio.name}}}</span>
+                <span class="portfolios-page-card__title">{{{portfolio.name}}}<br />{{{portfolio.price}}}</span>
             </a>
 
             {% endfor %}
         </div>
+        {% endfor %}
 
-        <button class="load-more" id="loadPortfolios">Load more</button>
+        <!-- <button class="load-more" id="loadPortfolios">Load more</button> -->
 
     </div>
 </section>
-
+<!-- 
 <div style="display: none;" id="template-portfolio">
     <a href="/portfolio/{_id}" class="portfolios-page__card portfolios-page-card">
         <div class="portfolios-page-card__img">
@@ -69,4 +84,4 @@
 
 <div style="display: none;" id="template-portfolio_thumb">
     <img src="{thumb}" alt="{name}" />
-</div>
+</div> -->
