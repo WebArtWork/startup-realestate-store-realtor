@@ -57,7 +57,7 @@
         <div class="portfolios-page__wrapper">
             {% for portfolio in tag.portfolios %}
 
-            <a href="/portfolio/{{{portfolio.id}}}" class="portfolios-page__card portfolios-page-card">
+            <a href="/portfolio{{{portfolio.url ? '/' + portfolio.url : '' || portfolio.id ? '/' + portfolio.id : ''}}}" class="portfolios-page__card portfolios-page-card">
                 <div class="portfolios-page-card__img">
                     <img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}" />
                 </div>

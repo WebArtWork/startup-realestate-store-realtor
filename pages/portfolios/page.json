@@ -5,27 +5,23 @@
       "name": "Realestate",
       "portfolios": [
         {
-          "url": "/portfolio",
           "thumb": "/artemvelihin/img/realestate1.jpg",
-		  "price":"3200$",
+          "price": "3200$",
           "name": "Realestate"
         },
         {
-          "url": "/portfolio",
           "thumb": "/artemvelihin/img/realestate2.jpg",
-		  "price":"3200$",
+          "price": "3200$",
           "name": "Realestate"
         },
         {
-          "url": "/portfolio",
           "thumb": "/artemvelihin/img/realestate3.jpg",
-		  "price":"3200$",
+          "price": "3200$",
           "name": "Realestate"
         },
         {
-          "url": "/portfolio",
           "thumb": "/artemvelihin/img/realestsate4.jpg",
-		  "price":"3200$",
+          "price": "3200$",
           "name": "Realestate"
         }
       ]
